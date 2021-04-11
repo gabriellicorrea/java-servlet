@@ -11,7 +11,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Lista de empresas: <br />
+
+	<c:if test="${ not empty empresa }">
+		Empresa ${ empresa } cadastrada com sucesso!
+	</c:if>
+	
+	
+	
+	
+	<h1>Lista de empresas: </h1>
+	
 	
 		<ul>
 			<c:forEach items="${empresas}" var="empresa">	 <!-- sao os itens que vao fazer o laco, no caso o for vai percorrer a variavel de empresas -->
