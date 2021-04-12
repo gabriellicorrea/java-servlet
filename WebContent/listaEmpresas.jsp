@@ -24,7 +24,10 @@
 	
 		<ul>
 			<c:forEach items="${empresas}" var="empresa">	 <!-- sao os itens que vao fazer o laco, no caso o for vai percorrer a variavel de empresas -->
-				<li>${empresa.nome } <fmt:formatDate value="${ empresa.dataAbertura }" pattern="dd/MM/yyyy"/></li><!-- mostra o nome das empresas -->
+				<li>${empresa.nome }  <fmt:formatDate value="${ empresa.dataAbertura }" pattern="dd/MM/yyyy"/>-<!-- mostra o nome das empresas -->
+					<a href="/gerenciador/mostraEmpresa?id=${ empresa.id }"> alterar</a>
+					<a href="/gerenciador/removeEmpresa?id=${ empresa.id }">remover</a>
+				</li>
 			</c:forEach>
 		</ul>
 
