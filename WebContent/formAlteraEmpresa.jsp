@@ -13,7 +13,7 @@
 
 	<form action="${linkServletNovaEmpresa}" method="post"> <!-- Aqui é para onde mando essa pagina html -->
 	
-		Nome: <input type="text" name="nome" value="${ empresa.nome }"/> <!-- name é o parametro que vai ser recebido  -->
+		Nome: <input type="text" name="nome" value="${ empresa.nome }"/> 5<!-- name é o parametro que vai ser recebido  -->
 		Data Abertura: <input type="text" name="data" value="<fmt:formatDate value="${ empresa.dataAbertura }" pattern="dd/MM/yyyy"/>"/>
 		<input type="hidden" name="id" value="${empresa.id }"/>
 		<input type="submit"/>
